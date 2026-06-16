@@ -1,0 +1,116 @@
+/* ── Base ── */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 60px;
+  height: 64px;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* ── Brand ── */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+
+.brand-icon {
+  font-size: 22px;
+  line-height: 1;
+}
+
+.brand-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0f6e56;
+  letter-spacing: -0.3px;
+}
+
+/* ── Links ── */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.nav-link {
+  text-decoration: none; /* ← add this */
+  position: relative;
+  padding: 6px 14px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #6b7280;
+  border-radius: 8px;
+  transition: color 0.2s, background 0.2s;
+}
+
+.nav-link:hover {
+  color: #0f6e56;
+  background: #f0faf5;
+}
+
+.nav-link.active {
+  color: #0f6e56;
+  font-weight: 600;
+}
+
+/* green underline on active */
+.nav-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 14px;
+  right: 14px;
+  height: 2px;
+  border-radius: 2px;
+  background: #0f6e56;
+}
+
+/* ── CTA button ── */
+.nav-cta {
+  padding: 8px 20px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #ffffff;
+  background: #0f6e56;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.15s;
+  white-space: nowrap;
+}
+
+
+.nav-cta:hover {
+  background: #085041;
+  transform: translateY(-1px);
+}
+
+/* ── Responsive ── */
+@media (max-width: 640px) {
+  .navbar {
+    padding: 0 20px;
+    flex-wrap: wrap;
+    height: auto;
+    gap: 10px;
+    padding-block: 12px;
+  }
+
+  .nav-links {
+    gap: 2px;
+  }
+
+  .nav-link {
+    font-size: 13px;
+    padding: 5px 10px;
+  }
+
+  .nav-cta {
+    display: none;
+  }
+}

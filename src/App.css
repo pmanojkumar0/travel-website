@@ -30,7 +30,7 @@ html {
 
 .nav-links button {
   background: white;
-  color: #63967e;
+  color: #5fa16c;
   border: none;
   padding: 10px 20px;
   border-radius: 30px;
@@ -40,7 +40,7 @@ html {
 }
 
 .nav-links button:hover {
-  background: #198754;
+  background: #f1f1f1;
   color: white;
   transform: translateY(-3px);
 }
@@ -56,7 +56,6 @@ html {
   align-items:center;
   text-align:center;
 }
-
 .hero h1{
   font-size:60px;
 }
@@ -65,7 +64,7 @@ html {
   margin-top:20px;
   padding:12px 30px;
   border:none;
-  background:#16a34a;
+  background:#278f1b;
   color:white;
   cursor:pointer;
 }
@@ -126,14 +125,102 @@ th,td{
 
 .contact button{
   padding:12px;
-  background:#16a34a;
+  background:#810606;
   color:white;
   border:none;
 }
 
 footer{
-  background:#0d6e4f;
+  background:#056345;
   color:white;
   text-align:center;
   padding:20px;
+}
+
+.contact-section {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.contact-section h2 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.contact-section p {
+  color: #ff0000;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+}
+
+.form-group textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.char-count {
+  text-align: right;
+  color: #666;
+  margin-top: 5px;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 16px;
+  background: #0da444;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background: #03f15a;
+}
+
+.privacy-note {
+  margin-top: 20px;
+  color: #555;
+}
+
+.explore-btn {
+  display: inline-block;
+  padding: 12px 32px;
+  background: #1a7a3c;
+  color: white;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.explore-btn:hover {
+  background: #145c2d;
 }

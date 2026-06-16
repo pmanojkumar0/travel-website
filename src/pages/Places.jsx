@@ -1,11 +1,7 @@
 import Destinations from "../components/Destinations";
 
 function Places() {
-  return (
-    <>
-      <Destinations />
-    </>
-  );
+  return <Destinations />;
 }
 
 export default Places;

@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -7,6 +8,7 @@ import Home from "./pages/Home";
 import Places from "./pages/Places";
 import Budget from "./pages/Budget";
 import Contact from "./pages/Contact";
+
 import "./App.css";
 
 function App() {
