@@ -1,0 +1,139 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial,sans-serif;
+}
+
+.navbar{
+  background:#1de0ee;
+  color:white;
+  display:flex;
+  justify-content:space-between;
+  padding:20px 60px;
+}
+
+.navbar ul{
+  display:flex;
+  gap:25px;
+  list-style:none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links button {
+  background: white;
+  color: #63967e;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav-links button:hover {
+  background: #198754;
+  color: white;
+  transform: translateY(-3px);
+}
+
+.hero{
+  height:90vh;
+  background:url("https://images.unsplash.com/photo-1501785888041-af3ef285b470");
+  background-size:cover;
+  color:white;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+.hero h1{
+  font-size:60px;
+}
+
+.hero button{
+  margin-top:20px;
+  padding:12px 30px;
+  border:none;
+  background:#16a34a;
+  color:white;
+  cursor:pointer;
+}
+
+.places{
+  padding:60px;
+}
+
+.card-container{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:25px;
+  margin-top:30px;
+}
+
+.card{
+  box-shadow:0 5px 20px rgba(0,0,0,0.1);
+  border-radius:10px;
+  overflow:hidden;
+}
+
+.card img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+}
+
+.card h3,
+.card p{
+  padding:10px;
+}
+
+.budget{
+  padding:60px;
+}
+
+table{
+  width:100%;
+  border-collapse:collapse;
+}
+
+th,td{
+  border:1px solid #ddd;
+  padding:15px;
+}
+
+.contact{
+  padding:60px;
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+
+.contact input,
+.contact textarea{
+  padding:12px;
+}
+
+.contact button{
+  padding:12px;
+  background:#16a34a;
+  color:white;
+  border:none;
+}
+
+footer{
+  background:#0d6e4f;
+  color:white;
+  text-align:center;
+  padding:20px;
+}
